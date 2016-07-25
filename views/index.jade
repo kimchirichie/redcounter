@@ -1,0 +1,44 @@
+extends layout
+
+block content
+	.container
+		.row
+			.meter
+				span(id="totalbar", style="width: 25%")
+				img(id="fire", src="/images/fire.gif")
+			h1(id="warning") WARNING.HOT!
+		br
+		.row
+			img(class="photo" src="/images/us.jpg")
+			h5(class="quote") "I can't sleep alone" - Asuka
+		hr
+		.row
+			h2(class="title") our secret .. ;)
+		.row
+			img(src="/images/kiss.ico")
+			h4(class="subtitle") kiss..<span id="kisscount"></span>
+			div(class="meter")
+				span(id="kissbar" style="width: 25%")
+		.row
+			img(src="/images/lick.ico")
+			h4(class="subtitle") lick..<span id="lickcount"></span>
+			div(class="meter")
+				span(id="lickbar" style="width: 25%")
+
+		.row
+			img(src="/images/sex.ico")
+			h4(class="subtitle") sex..<span id="sexcount"></span>
+			div(class="meter")
+				span(id="sexbar" style="width: 25%")
+				//- span
+		.row
+			ul(class="stats")
+				li
+					a(class="button" href="/kiss") 
+						img(src="/images/kiss.ico")
+				li 
+					a(class="button" href="/lick") 
+						img(src="/images/lick.ico")
+				li 
+					a(class="button" href="/sex") 
+						img(src="/images/sex.ico")
