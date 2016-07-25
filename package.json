@@ -1,0 +1,22 @@
+{
+  "name": "asuka",
+  "version": "1.0.0",
+  "description": "app for asukas week",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinr0202/asuka.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sinr0202/asuka/issues"
+  },
+  "homepage": "https://github.com/sinr0202/asuka#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
