@@ -69,8 +69,6 @@ router.get('/stats', function(req, res, next) {
 			});
 		});
 	});
-	// var data = {kiss:23,lick:10,sex:8};
-	// res.json(data);
 });
 
 

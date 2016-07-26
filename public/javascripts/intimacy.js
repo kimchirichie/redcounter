@@ -1,10 +1,14 @@
 $(document).ready(function(){
 	
 	$.get('/stats',function(data){
-		var kissprog = parseFloat(data.kiss)*(100/30)
-		var lickprog = parseFloat(data.lick)*(100/10)
-		var sexprog = parseFloat(data.sex)*(100/10);
+		var kissprog = parseFloat(data.kiss)*(100/15)
+		var lickprog = parseFloat(data.lick)*(100/5)
+		var sexprog = parseFloat(data.sex)*(100/5);
 		var totalprog = (kissprog+lickprog+sexprog)/3;
+		if (kissprog < 5) kissprog = 5;
+		if (lickprog < 5) lickprog = 5;
+		if (sexprog < 5) sexprog = 5;
+		if (totalprog < 5) totalprog = 5;
 
 		$('#kisscount').html(data.kiss);
 		$('#lickcount').html(data.lick);
@@ -15,9 +19,15 @@ $(document).ready(function(){
 		$('#sexbar').width(sexprog+"%");
 		$('#totalbar').width(totalprog+"%");
 
+		if(kissprog >=60){
+			$('#kissbar').parent().addClass('orange');
+		}
+
+		if(lickprog >= 60){
+			$('#lickbar').parent().addClass('orange');
+		}
+
 		if(sexprog >= 80){
-			$('#sexbar').parent().removeClass('orange');
-			$('#totalbar').parent().removeClass('orange');
 			$('#sexbar').parent().addClass('red');
 			$('#totalbar').parent().addClass('red');
 			fadeout();

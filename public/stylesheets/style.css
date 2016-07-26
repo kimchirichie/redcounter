@@ -34,6 +34,7 @@ hr {
 }
 
 .quote {
+	color:grey;
 	float:right;
 }
 
@@ -147,6 +148,14 @@ a{
 	position:absolute;
 	height:40px;
 	top:-10px;
+}
+
+#flag {
+	/*display:none;*/
+	position:absolute;
+	height:40px;
+	top:-5px;
+	right:-10px;
 }
 
 #warning {
