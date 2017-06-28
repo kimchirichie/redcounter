@@ -1,9 +1,12 @@
 $(document).ready(function(){
 	
 	$.get('/stats',function(data){
-		var kissprog = parseFloat(data.kiss)*(100/15)
-		var lickprog = parseFloat(data.lick)*(100/5)
-		var sexprog = parseFloat(data.sex)*(100/5);
+		var kiss_goal = 100;
+		var lick_goal = 50;
+		var sex_goal = 50;
+		var kissprog = parseFloat(data.kiss)*(100/kiss_goal);
+		var lickprog = parseFloat(data.lick)*(100/lick_goal);
+		var sexprog = parseFloat(data.sex)*(100/sex_goal);
 		var totalprog = (kissprog+lickprog+sexprog)/3;
 		if (kissprog < 5) kissprog = 5;
 		if (lickprog < 5) lickprog = 5;

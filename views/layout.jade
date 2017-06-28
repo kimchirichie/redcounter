@@ -1,24 +1,29 @@
 doctype html
 html
 	head
-		title Asuka&Richard
+		title Kayla&Richard
 		link(rel='stylesheet', href='/stylesheets/normalize.css')
 		link(rel='stylesheet', href='/stylesheets/skeleton.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/msgs.css')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		meta(property='og:title', content='Toronto lovers')
 		meta(property='og:type', content='website')
-		meta(property='og:url', content='http://asuka.richardsin.com')
-		meta(property='og:image', content='http://asuka.richardsin.com/images/pourboy.jpg')
+		meta(property='og:url', content='http://kayla.kimchirichie.com')
+		meta(property='og:image', content='http://kayla.kimchirichie.com/images/fish.jpg')
 		meta(property='og:description', content='OMG we\'re gonna have so much funnnnn')
 		script(src="https://code.jquery.com/jquery-3.1.0.min.js", integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin="anonymous")
 		script(type="text/javascript", src="/javascripts/intimacy.js")
+		script(type="text/javascript", src="/javascripts/msgs.js")
 
 	body
 		.header
-			h1 
-				a(href="/") Asuka&Richard
-
+			.container
+				div(class="row panel-relative")
+					a(class="msgs-btn", href="/msgs")
+						img(id="msgs" src="/images/msgs.svg")
+					h1(class="top-title")
+						a(href="/") Kayla&Richard
 		block content
 
 		.footer
@@ -29,6 +34,6 @@ html
 				li
 					a(href="tel:2266004161") 226) 600 4161
 				li
-					a(href="http://maps.google.com/maps?daddr=43.479781,-80.533144&amp;ll=") 78 Columbia St W, Waterloo
+					a(href="https://www.google.ca/maps/place/4593+Park+St,+Niagara+Falls,+ON+L2E+3V5/@43.1076087,-79.0714223,17z/data=!3m1!4b1!4m5!3m4!1s0x89d3432937514b27:0x7c84792ae389879f!8m2!3d43.1076087!4d-79.0692336") 4593 Park St, Niagara Falls
 
-			<span>© 2016 sinr0202. All rights reserved</span>
+			<span>© 2017 kimchirichie. All rights reserved</span>

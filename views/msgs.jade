@@ -1,0 +1,19 @@
+extends layout
+
+block content
+	.container
+		.row
+			h2(class="title") our whispers .. ;)
+		div(class="row" id="msg-box")
+			p(class="nothing") nothing yet..
+		.row
+			form(class="msg-form", action="/msgs", method="post")
+				label Write a message
+				select(class="user-select", name="user")
+					option kayla
+					option richard
+				br
+				.btn-group
+					input(class="msg-field", name="msg", type="text", placeholder="Ex. a quickie in 30mins? ;)")
+					button(class="msg-btn", type="submit") post
+
