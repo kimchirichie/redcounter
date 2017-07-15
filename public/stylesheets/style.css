@@ -38,8 +38,8 @@ hr {
 	margin-bottom: 10px;
 }
 
-.photo {
-	max-width: 100%;
+#photo {
+	width: 100%;
 	border-radius: 10px;
 }
 
