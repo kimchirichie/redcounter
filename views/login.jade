@@ -1,0 +1,48 @@
+
+
+
+doctype html
+html
+	head
+		title Kayla&Richard
+		link(rel='stylesheet', href='/stylesheets/normalize.css')
+		link(rel='stylesheet', href='/stylesheets/skeleton.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/msgs.css')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(property='og:title', content='Toronto lovers')
+		meta(property='og:type', content='website')
+		meta(property='og:url', content='http://kayla.kimchirichie.com')
+		meta(property='og:image', content='http://kayla.kimchirichie.com/images/fish.jpg')
+		meta(property='og:description', content='OMG we\'re gonna have so much funnnnn')
+		script(src="https://code.jquery.com/jquery-3.1.0.min.js", integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin="anonymous")
+		script(type="text/javascript", src="/javascripts/intimacy.js")
+		script(type="text/javascript", src="/javascripts/msgs.js")
+
+	body
+		.header
+			.container
+				div(class="row panel-relative")
+					a(class="msgs-btn", href="/msgs")
+						img(id="msgs" src="/images/msgs.svg")
+					h1(class="top-title")
+						a(href="/") Kayla&Richard
+		.container
+			.row
+				form(action='/',method='post')
+					label(for='password') The password
+					input(name='password',type='password' placeholder="****************")
+					br
+					button(type='submit') Unlock
+
+		.footer
+
+			ul(class="extras")
+				li
+					a(href="https://fb.com/") Richard's fb
+				li
+					a(href="tel:1234567890") 123) 456 7890
+				li
+					a(href="https://www.google.ca/maps/") The place
+
+			<span>© 2017 kimchirichie. All rights reserved</span>

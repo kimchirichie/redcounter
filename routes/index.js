@@ -17,6 +17,11 @@ router.get('/', function(req, res, next) {
 	res.render('index');
 });
 
+router.post('/', function(req, res, next) {
+	res.redirect('/');
+});
+
+
 router.get('/msgs', function(req, res, next){
 	res.render('msgs');
 })
